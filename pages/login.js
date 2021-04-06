@@ -25,17 +25,19 @@ export default function Login() {
 
                 <form action="#" method="post" className="mt-8 space-y-6">
                     <input type="hidden" name="remember" value="true" />
-                    <div className="rounded-md shadow-sm -space-y-px">
-                        <div>
-                            <label htmlFor="email-address" className="block text-gray-900 text-sm">Email Address: </label>
+                    <div className="rounded-md shadow-sm">
+                        <div className="my-5">
+                            <label htmlFor="email-address" className="block mb-1 text-gray-800 text-base font-normal tracking-wide">
+                                Email Address: 
+                            </label>
                             <input type="email" name="email" id="email-address" autoComplete="email" required
-                                className="appearance-none rounded-none relative w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                className="appearance-none relative w-full px-3 py-2 border border-gray-300 placeholder-gray-300 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                                 placeholder="example@email.com" />
                         </div>
                         <div>
-                            <label htmlFor="password" className="block text-gray-900 text-sm">Password: </label>
+                            <label htmlFor="password" className="block mb-1 text-gray-800 text-base font-normal tracking-wide">Password: </label>
                             <input type="password" name="password" id="password" autoComplete="current-password" required
-                                className="appearance-none rounded-none relative w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+                                className="appearance-none relative w-full px-3 py-2 border border-gray-300 placeholder-gray-300 text-gray-900 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                                 placeholder="Password" />
                         </div>
                     </div>
