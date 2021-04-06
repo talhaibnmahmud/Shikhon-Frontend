@@ -32,10 +32,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div>
+          <div className="mb-16">
             <h2 className="text-gray-900 text-3xl text-center font-semibold m-3">Our Courses</h2>
 
-            <div className="">
+            <div className="md:grid md:grid-cols-2">
               <Card className="max-w-md w-full lg:flex" subject="ICT" icon="ict.svg"></Card>
               <Card className="max-w-md w-full lg:flex" subject="Physics" icon="physics.svg"></Card>
               <Card className="max-w-md w-full lg:flex" subject="Chemistry" icon="chemistry.svg"></Card>

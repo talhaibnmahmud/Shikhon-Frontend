@@ -1,14 +1,28 @@
+import Link from 'next/link';
+
+
 export default function HomeCard({subject, icon}) {
     return(
-        <div className="max-w-md mx-auto lg:w-48 my-4 lg:flex">
-            <div className="w-full border bg-white border-gray-300 rounded-md my-4 p-4 flex flex-col justify-between leading-normal">
-                <div className="flex justify-center items-center -mt-4">
-                    <img src={icon}  className="w-24 h-24"/>
+        <div className="my-8">
+            <section className="flex items-center justify-center my-3 px-4">
+                <div className="max-w-lg w-full rounded-lg shadow-lg p-4">
+                    <h3 className="font-semibold text-lg tracking-wide">{ subject }</h3>
+                    <p className="text-gray-500 my-1">
+                        This page is still under development. Please stay with us to always get the latest from
+                        Shikhon Academy
+                    </p>
+                    <div className="mt-2">
+                        <Link href="/">
+                        <a className="text-indigo-600  inline-flex items-center font-semibold tracking-wide">
+                            <span className="hover:underline">
+                                Continue to { subject }
+                            </span>
+                            <span className="text-xl ml-2">&#8594;</span>
+                        </a>
+                        </Link>
+                    </div>
                 </div>
-                <div>
-                    <p className="text-2xl text-center font-semibold h">{ subject }</p>
-                </div>
-            </div>
+            </section>
         </div>
     );
 }
