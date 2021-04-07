@@ -12,8 +12,12 @@ export default function Login() {
 
             <div className="max-w-md w-full space-y-8">
                 <div>
-                    <img className="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                        alt="Shikhon" />
+                    <Link href="/">
+                        <a>
+                            <img className="mx-auto h-12 w-auto" src="/icon.svg"
+                                alt="Shikhon" />
+                        </a>
+                    </Link>
                     <h2 className="mt-6 text-center text-3xl font-bold text-gray-900">Sign in to your account</h2>
                     <p className="mt-2 text-center text-sm text-gray-600">
                         or&nbsp;
