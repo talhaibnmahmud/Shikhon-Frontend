@@ -26,8 +26,11 @@ module.exports = {
         yellow: colors.yellow,
       },
       fontFamily: {
+        atma: ['Atma', 'cursive'],
+        balooda: ['Baloo Da 2', 'cursive'],
         poppins: ['Poppins', 'sans-serif'],
         raleway: ['Raleway', 'sans-serif'],
+        siliguri: ['Hind Siliguri', 'sans-serif'],
       },
     },
   },

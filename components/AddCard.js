@@ -9,7 +9,10 @@ export default function Addcard({ subject }) {
                     <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" className="block rounded-t-md w-full h-48 object-cover" />
                 </div>
                 <div className="flex justify-start p-3">
-                    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80" className="h-12 w-12 rounded-full object-cover" />
+                    <div className="relative">
+                        <div className="absolute w-3 h-3 right-0 top-1/4 transform translate-x-1/3 bg-green-600 rounded-full border border-gray-100"></div>
+                        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80" className="h-12 w-12 rounded-full object-cover" />
+                    </div>
                     <div className="mx-3">
                         <h3 className="text-lg text-gray-800 font-medium">John Doe</h3>
                         <p className="capitalize text-sm text-gray-400 leading-3">{ subject } Teacher</p>

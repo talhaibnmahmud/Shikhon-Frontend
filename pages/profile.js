@@ -18,8 +18,8 @@ export default function Profile() {
                                         src="https://lavinephotography.com.au/wp-content/uploads/2017/01/PROFILE-Photography-112.jpg"
                                         alt="" />
                                 </div>
-                                <h1 className="text-gray-800 font-poppins tracking-wide font-bold text-xl leading-8 mt-2">Jane Doe</h1>
-                                <h3 className="text-gray-600 font-lg text-semibold leading-6">Khulna University of Engineering & Technology</h3>
+                                <h1 className="text-gray-800 tracking-wide font-siliguri font-bold text-xl leading-8 mt-2">ময়নার মা</h1>
+                                <h3 className="text-gray-600 font-siliguri font-lg text-semibold leading-6">খুলনা প্রকৌশন ও প্রযুক্তি বিশ্ববিদ্যালয়</h3>
                                 <p className="text-sm text-gray-500 leading-6 mt-4">
                                     Lorem ipsum dolor sit amet
                                     consectetur adipisicing elit.

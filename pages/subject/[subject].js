@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 
 import Addcard from '../../components/AddCard';
 import Layout from '../../components/Layout';
+import Pagination from '../../components/Pagination';
 
 
 export default function Subject() {
@@ -41,6 +42,8 @@ export default function Subject() {
                     <Addcard subject={ subject }></Addcard>
                     <Addcard subject={ subject }></Addcard>
                 </div>
+
+                <Pagination></Pagination>
             </div>
         </Layout>
     );

@@ -12,7 +12,7 @@ export default function HomeCard({subject, icon}) {
                         Shikhon Academy
                     </p>
                     <div className="mt-2">
-                        <Link href="/">
+                        <Link href={{ pathname: '/subject/[name]', query: {name: subject}, }}>
                         <a className="text-indigo-600  inline-flex items-center font-semibold tracking-wide">
                             <span className="hover:underline">
                                 Continue to { subject }

@@ -8,8 +8,8 @@ export default function Footer() {
                     <div className="pb-12 px-3 sm:px-0">
                         <div className="w-full pt-12 flex flex-col sm:flex-row space-y-2 justify-around">
                             <div className="w-full mb-3 sm:w-2/5 pr-6 flex flex-col space-y-4 font-raleway">
-                                <h3 className="text-2xl font-semibold">Shikhon Academy</h3>
-                                <p className="opacity-60">Concord Royal Court (3rd floor) Dhanmondi, Dhaka 1209, Bangladesh.</p>
+                                <h3 className="text-3xl font-siliguri font-semibold">শিখন একাডেমি</h3>
+                                <p className="opacity-60 font-siliguri leading-4">কনকর্ড রয়্যাল কোর্ট (৩য় তলা) ধানমন্ডি, ঢাকা ১২০৯, বাংলাদেশ</p>
                             </div>
                             <div className="w-full sm:w-1/5 flex flex-col space-y-4">
                                 <Link href="/about">

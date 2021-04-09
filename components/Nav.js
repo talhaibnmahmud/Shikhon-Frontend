@@ -58,7 +58,7 @@ export default function Nav() {
                             {/* <img className="block lg:hidden h-8 w-auto"
                                 src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg" alt="Workflow" /> */}
                             <img className="block h-8 w-auto" src="/icon.svg" alt="Shikhon" />
-                            <h1 className="hidden lg:block text-white text-2xl font-raleway font-semibold px-3">&nbsp;Shikhon&nbsp;</h1>
+                            <h1 className="text-white text-2xl font-siliguri font-semibold leading-3 px-2 mt-1">&nbsp;শিখন&nbsp;</h1>
                             {/* <img className="hidden lg:block h-8 w-auto"
                                 src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
                                 alt="Workflow" /> */}
@@ -115,13 +115,13 @@ export default function Nav() {
                                 aria-labelledby="user-menu"
                             >
                                 <Link href="/profile">
-                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Profile</a>
+                                <a href="#" className="block px-4 py-2 text-base text-gray-700 font-siliguri font-medium hover:bg-gray-100" role="menuitem">প্রোফাইল</a>
                                 </Link>
                                 <Link href="/settings">
-                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Settings</a>
+                                <a href="#" className="block px-4 py-2 text-base text-gray-700 font-siliguri font-medium hover:bg-gray-100" role="menuitem">সেটিংস</a>
                                 </Link>
                                 <Link href="/">
-                                <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign Out</a>
+                                <a href="#" className="block px-4 py-2 text-base text-gray-700 font-siliguri font-medium hover:bg-gray-100" role="menuitem">সাইন আউট</a>
                                 </Link>
                             </div>
                         </div>
