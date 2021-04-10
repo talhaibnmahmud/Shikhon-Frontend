@@ -3,7 +3,7 @@ import Head from 'next/head';
 import Footer from '../components/Footer';
 import Nav from '../components/Nav';
 
-export default function Home({children, title}) {
+const Home = ({children, title}) => {
     return (
         <div className="container mx-auto bg-coolGray-50">
             <Head>
@@ -40,14 +40,14 @@ export default function Home({children, title}) {
                 <meta name="twitter:site" content="@Shikhon" />
                 <meta name="twitter:creator" content="@talha1728" />
                 <meta property="twitter:title" content="Shikhon Academy" />
-                <meta property="twitter:image" content="https://shikhon.vercel.app/icon.svg" />
+                <meta property="twitter:image" content="https://shikhon.vercel.app/work.jfif" />
                 <meta property="twitter:description" content="Shikhon Academy is an online tuition and learning community primarily based on Bangladesh" />
                 <meta property="og:locale" content="en_US" />
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="Shikhon Academy" />
                 <meta property="og:site_name" content="Shikhon Academy" />
                 <meta property="og:url" content="https://shikhon.vercel.app/" />
-                <meta property="og:image" content="https://shikhon.vercel.app/icon.svg" />
+                <meta property="og:image" content="https://shikhon.vercel.app/work.jfif" />
                 <meta property="og:description" content="Shikhon Academy is an online tuition and learning community primarily based on Bangladesh" />
 
                 {/* Fonts */}
@@ -69,3 +69,6 @@ export default function Home({children, title}) {
         </div>
     );
 }
+
+
+export default Home;

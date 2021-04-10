@@ -1,7 +1,7 @@
 {
  "name": "Shikhon Academy",
  "short_name": "Shikhon",
- "start_url": "http://localhost:3000",
+ "start_url": "https://shikhon.vercel.app/",
  "display": "standalone",
  "background_color": "#5AADBF",
  "theme_color": "#F2F2F2",

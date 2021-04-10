@@ -6,7 +6,7 @@ export default function HomeCard({subject, icon}) {
         <div className="my-8">
             <section className="flex items-center justify-center my-3 px-4">
                 <div className="max-w-lg w-full rounded-lg shadow-lg p-4">
-                    <h3 className="font-semibold text-lg tracking-wide">{ subject }</h3>
+                    <h3 className="font-semibold text-lg lg:text-xl tracking-wide">{ subject }</h3>
                     <p className="text-gray-500 my-1">
                         This page is still under development. Please stay with us to always get the latest from
                         Shikhon Academy

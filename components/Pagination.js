@@ -1,4 +1,7 @@
-export default function Pagination() {
+import Link from 'next/link';
+
+
+const Pagination = () => {
     return(
         <div className="bg-white my-3 px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
             <div className="flex-1 flex justify-between sm:hidden">
@@ -30,27 +33,19 @@ export default function Pagination() {
                             <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                         </a>
-                        <a href="#" className="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700">
-                        1
-                        </a>
-                        <a href="#" className="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
-                        2
-                        </a>
-                        <a href="#" className="hidden md:inline-flex relative items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
-                        3
-                        </a>
+
+                        <PaginationLink link="#" text="1" />
+                        <PaginationLink link="#" text="2" />
+                        <PaginationLink link="#" text="3" />
+
                         <span className="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700">
                         ...
                         </span>
-                        <a href="#" className="hidden md:inline-flex relative items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
-                        8
-                        </a>
-                        <a href="#" className="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
-                        9
-                        </a>
-                        <a href="#" className="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
-                        10
-                        </a>
+
+                        <PaginationLink link="#" text="8" />
+                        <PaginationLink link="#" text="9" />
+                        <PaginationLink link="#" text="10" />
+                        
                         <a href="#" className="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
                         <span className="sr-only">Next</span>
                         {/* <!-- Heroicon name: solid/chevron-right --> */}
@@ -64,3 +59,17 @@ export default function Pagination() {
         </div>
     );
 }
+
+
+const PaginationLink = ({ link, text }) => {
+    return(
+        <Link href={link}>
+            <a className="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                { text }
+            </a>
+        </Link>
+    );
+}
+
+
+export default Pagination;

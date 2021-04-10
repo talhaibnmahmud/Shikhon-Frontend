@@ -1,5 +1,5 @@
-export default function FAQCard({title, content}) {
-    const paddingContent = content ? "p-2" : "";
+const FAQCard = ({title, content}) => {
+    const paddingContent = content ? "py-2 pl-11 pr-2" : "";
 
     return(
         <div className="mb-2">
@@ -17,3 +17,6 @@ export default function FAQCard({title, content}) {
         </div>
     );
 }
+
+
+export default FAQCard;

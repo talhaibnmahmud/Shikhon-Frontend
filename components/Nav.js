@@ -3,13 +3,16 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 
-export default function Nav() {
+import NavLink from '../components/NavLink';
+
+
+const Nav = () => {
+    const router = useRouter();
     const [ isOpen, setIsOpen ] = useState(false);
     const [ userDropdownOpen, setUserDropdownOpen ] = useState(false);
 
     let burger = isOpen ? "hidden" : "block";
     let close = isOpen ? "block" : "hidden";
-
     let dropdown = userDropdownOpen ? "block" : "hidden";
 
     return(
@@ -66,21 +69,20 @@ export default function Nav() {
                         </Link>
                         <div className="hidden sm:block sm:ml-6">
                             <div className="flex space-x-4">
-                                <a href="#"
-                                    className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Dashbooard</a>
-                                <a href="#"
-                                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">View Courses</a>
-                                <a href="#"
-                                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
-                                <a href="#"
-                                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                                <Link href="/">
+                                <a className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Dashbooard</a>
+                                </Link>
+                                <NavLink link="/" text="Courses" />
+                                <NavLink link="/about" text="About" />
+                                <NavLink link="/contact" text="Contact" />
                             </div>
                         </div>
                     </div>
 
                     <div className="absolute right-0 inset-y-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                         <button
-                            className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                            className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                            onClick={() => router.push('/notifications')}>
                             <span className="sr-only">View notifications</span>
                             {/* <!-- Heroicon name: outline/bell --> */}
                             <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -100,11 +102,12 @@ export default function Nav() {
                                     onClick={() => setUserDropdownOpen(!userDropdownOpen)}
                                 >
                                     <span className="sr-only">Open user menu</span>
-                                    <img
+                                    {/* <img
                                         src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                                         alt=""
                                         className="h-8 w-8 rounded-full"
-                                    />
+                                    /> */}
+                                    <img src="/profile.jfif" alt="Profile Image" className="h-8 w-8 rounded-full object-cover" />
                                 </button>
                             </div>
 
@@ -115,13 +118,13 @@ export default function Nav() {
                                 aria-labelledby="user-menu"
                             >
                                 <Link href="/profile">
-                                <a href="#" className="block px-4 py-2 text-base text-gray-700 font-siliguri font-medium hover:bg-gray-100" role="menuitem">প্রোফাইল</a>
+                                <a className="block px-4 py-2 text-base text-gray-700 font-siliguri font-medium hover:bg-gray-100" role="menuitem">প্রোফাইল</a>
                                 </Link>
                                 <Link href="/settings">
-                                <a href="#" className="block px-4 py-2 text-base text-gray-700 font-siliguri font-medium hover:bg-gray-100" role="menuitem">সেটিংস</a>
+                                <a className="block px-4 py-2 text-base text-gray-700 font-siliguri font-medium hover:bg-gray-100" role="menuitem">সেটিংস</a>
                                 </Link>
                                 <Link href="/">
-                                <a href="#" className="block px-4 py-2 text-base text-gray-700 font-siliguri font-medium hover:bg-gray-100" role="menuitem">সাইন আউট</a>
+                                <a className="block px-4 py-2 text-base text-gray-700 font-siliguri font-medium hover:bg-gray-100" role="menuitem">সাইন আউট</a>
                                 </Link>
                             </div>
                         </div>
@@ -129,21 +132,17 @@ export default function Nav() {
                 </div>
             </div>
 
-
             <div id="mobile-menu" className={close + " sm:hidden"}>
                 <div className="px-2 pt-2 pb-3 space-y-1">
-                    <a href="#" className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                    <a href="#"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">View
-                        Courses</a>
-                    <a href="#"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About
-                        Us</a>
-                    <a href="#"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact
-                        Support</a>
+                    <a className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
+                    <NavLink link="/" text="Courses" />
+                    <NavLink link="/about" text="About" />
+                    <NavLink link="/contact" text="Contact" />
                 </div>
             </div>
         </nav>
     );
 }
+
+
+export default Nav;
