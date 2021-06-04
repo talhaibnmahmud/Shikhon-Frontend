@@ -11,7 +11,7 @@ npm install
 After installing the dependencies, run:
 
 ```bash
-npm run
+npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -23,11 +23,11 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 To see a preview of the build you can run
 
 ```bash
-npm start
+npm run start
 ```
 
 Once everything is up to your satisfaction, run:
 
 ```bash
-npm build
+npm run build
 ```
